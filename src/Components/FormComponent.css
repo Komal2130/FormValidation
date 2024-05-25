@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #008080;
+    --error-color: #ff4d4f;
+    --background-color: #f4f4f9;
+    --input-border-color: #ccc;
+    --input-focus-border-color: var(--primary-color);
+    --input-padding: 10px;
+    --input-margin-bottom: 15px;
+    --input-border-radius: 5px;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+  }
+  
+  .main {
+    display:inline;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .main.detail {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  h3 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, select, button {
+    padding: var(--input-padding);
+    margin-bottom: var(--input-margin-bottom);
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--input-border-radius);
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, select:focus {
+    border-color: var(--input-focus-border-color);
+    outline: none;
+  }
+  
+  .error {
+    color: var(--error-color);
+    font-size: 0.875em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: darken(var(--primary-color), 10%);
+  }
+  
